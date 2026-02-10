@@ -4,18 +4,16 @@ import heroImage from "@/assets/hero-yoga.jpg";
 const HeroSection = () => {
   return (
     <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background image */}
       <div className="absolute inset-0">
         <img
           src={heroImage}
-          alt="Estudio de yoga sereno con luz natural"
+          alt="Bhadram Yoga"
           className="w-full h-full object-cover"
           loading="eager"
         />
         <div className="absolute inset-0 bg-foreground/30" />
       </div>
 
-      {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-3xl">
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -23,7 +21,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="font-body text-sm tracking-[0.3em] uppercase text-primary-foreground/80 mb-6"
         >
-          Bienestar · Equilibrio · Paz Interior
+          Prosperidad · Alegría · Bendición
         </motion.p>
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
@@ -31,17 +29,25 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="font-display text-5xl md:text-7xl lg:text-8xl font-light text-primary-foreground leading-tight mb-8"
         >
-          Encuentra tu
+          Bhadram
           <br />
-          <span className="italic font-light">equilibrio</span>
+          <span className="italic font-light">Yoga</span>
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="font-body text-lg text-primary-foreground/90 mb-10 max-w-xl mx-auto leading-relaxed"
+          className="font-body text-lg text-primary-foreground/90 mb-4 max-w-xl mx-auto leading-relaxed italic"
         >
-          Clases de yoga personalizadas para conectar cuerpo, mente y espíritu en un espacio de calma y armonía.
+          «Conoce tu propia luz, esto te permitirá reconocer y ver toda la luz alrededor.»
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.7 }}
+          className="font-display text-base text-primary-foreground/70 mb-10"
+        >
+          — Swami Rama
         </motion.p>
         <motion.a
           href="#clases"
@@ -54,7 +60,6 @@ const HeroSection = () => {
         </motion.a>
       </div>
 
-      {/* Scroll indicator */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

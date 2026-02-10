@@ -5,7 +5,8 @@ import { Menu, X } from "lucide-react";
 const navLinks = [
   { label: "Inicio", href: "#inicio" },
   { label: "Sobre Mí", href: "#sobre-mi" },
-  { label: "Clases", href: "#clases" },
+  { label: "Mis Clases", href: "#clases" },
+  { label: "Cursos & Precios", href: "#precios" },
   { label: "Contacto", href: "#contacto" },
 ];
 
@@ -16,10 +17,9 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         <a href="#inicio" className="font-display text-2xl font-semibold tracking-wide text-foreground">
-          Namaste
+          Bhadram <span className="font-light text-primary">Yoga</span>
         </a>
 
-        {/* Desktop */}
         <ul className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
             <li key={link.href}>
@@ -33,7 +33,6 @@ const Navbar = () => {
           ))}
         </ul>
 
-        {/* Mobile toggle */}
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="md:hidden text-foreground"
@@ -43,7 +42,6 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile menu */}
       <AnimatePresence>
         {isOpen && (
           <motion.div

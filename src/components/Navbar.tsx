@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import logoImg from "@/assets/logo-bhadram.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,19 +22,11 @@ const Navbar = () => {
         <div className="flex w-full items-start justify-between mb-4">
           <div className="flex-1" />
           <a href="#inicio" className="flex-1 flex flex-col items-center">
-            {/* Lotus SVG icon */}
-            <svg width="48" height="36" viewBox="0 0 48 36" fill="none" xmlns="http://www.w3.org/2000/svg" className="mb-1">
-              <ellipse cx="24" cy="28" rx="8" ry="5" fill="hsl(var(--gold))" opacity="0.3"/>
-              <path d="M24 28 C20 20 12 18 10 10 C14 14 18 16 24 12 C30 16 34 14 38 10 C36 18 28 20 24 28Z" fill="hsl(30,60%,45%)"/>
-              <path d="M24 28 C22 18 16 14 16 6 C18 10 20 14 24 12 C28 14 30 10 32 6 C32 14 26 18 24 28Z" fill="hsl(30,70%,55%)"/>
-              <circle cx="24" cy="11" r="3" fill="hsl(30,70%,60%)"/>
-            </svg>
-            <span className="font-display text-2xl font-semibold tracking-[0.2em] text-foreground uppercase">
-              BHADRAM
-            </span>
-            <span className="font-display text-sm tracking-[0.4em] text-foreground uppercase font-light">
-              YOGA
-            </span>
+            <img
+              src={logoImg}
+              alt="Bhadram Yoga"
+              className="h-20 w-auto"
+            />
           </a>
           {/* Language switcher */}
           <div className="flex-1 flex justify-end items-start gap-2 pt-1">

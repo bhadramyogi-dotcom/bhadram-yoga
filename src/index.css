@@ -2,91 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Nunito+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Raleway:wght@300;400;500;600;700&display=swap');
 
 @layer base {
   :root {
-    --background: 35 33% 96%;
-    --foreground: 25 30% 15%;
+    --background: 0 0% 100%;
+    --foreground: 0 0% 10%;
 
-    --card: 35 30% 93%;
-    --card-foreground: 25 30% 15%;
+    --card: 0 0% 97%;
+    --card-foreground: 0 0% 10%;
 
-    --popover: 35 33% 96%;
-    --popover-foreground: 25 30% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
 
-    --primary: 142 25% 36%;
-    --primary-foreground: 35 33% 96%;
+    --primary: 30 55% 50%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 16 40% 65%;
-    --secondary-foreground: 35 33% 96%;
+    --secondary: 0 0% 50%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 35 20% 90%;
-    --muted-foreground: 25 15% 45%;
+    --muted: 0 0% 95%;
+    --muted-foreground: 0 0% 45%;
 
-    --accent: 38 55% 65%;
-    --accent-foreground: 25 30% 15%;
+    --accent: 30 55% 50%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 35 20% 85%;
-    --input: 35 20% 85%;
-    --ring: 142 25% 36%;
+    --border: 0 0% 88%;
+    --input: 0 0% 88%;
+    --ring: 30 55% 50%;
 
-    --radius: 0.75rem;
+    --radius: 0rem;
 
-    --sidebar-background: 35 30% 93%;
-    --sidebar-foreground: 25 30% 15%;
-    --sidebar-primary: 142 25% 36%;
-    --sidebar-primary-foreground: 35 33% 96%;
-    --sidebar-accent: 35 20% 90%;
-    --sidebar-accent-foreground: 25 30% 15%;
-    --sidebar-border: 35 20% 85%;
-    --sidebar-ring: 142 25% 36%;
+    --sidebar-background: 0 0% 97%;
+    --sidebar-foreground: 0 0% 10%;
+    --sidebar-primary: 30 55% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 95%;
+    --sidebar-accent-foreground: 0 0% 10%;
+    --sidebar-border: 0 0% 88%;
+    --sidebar-ring: 30 55% 50%;
 
-    /* Custom yoga tokens */
-    --hero-overlay: 25 30% 15% / 0.3;
-    --section-alt: 35 30% 93%;
-    --warm-glow: 38 55% 65% / 0.15;
-  }
-
-  .dark {
-    --background: 25 30% 8%;
-    --foreground: 35 33% 92%;
-
-    --card: 25 25% 12%;
-    --card-foreground: 35 33% 92%;
-
-    --popover: 25 25% 12%;
-    --popover-foreground: 35 33% 92%;
-
-    --primary: 142 25% 50%;
-    --primary-foreground: 25 30% 8%;
-
-    --secondary: 16 35% 50%;
-    --secondary-foreground: 35 33% 92%;
-
-    --muted: 25 20% 18%;
-    --muted-foreground: 35 15% 60%;
-
-    --accent: 38 45% 50%;
-    --accent-foreground: 35 33% 92%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 25 20% 20%;
-    --input: 25 20% 20%;
-    --ring: 142 25% 50%;
-    --sidebar-background: 25 25% 10%;
-    --sidebar-foreground: 35 33% 92%;
-    --sidebar-primary: 142 25% 50%;
-    --sidebar-primary-foreground: 25 30% 8%;
-    --sidebar-accent: 25 20% 18%;
-    --sidebar-accent-foreground: 35 33% 92%;
-    --sidebar-border: 25 20% 20%;
-    --sidebar-ring: 142 25% 50%;
+    /* Gold accent exact */
+    --gold: 30 55% 50%;
   }
 }
 

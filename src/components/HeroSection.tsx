@@ -13,7 +13,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1 }}
-          className="font-body text-xs md:text-sm text-primary font-bold leading-relaxed mb-6 max-w-none mx-auto text-center mt-4 whitespace-nowrap"
+          className="font-body text-xs md:text-sm text-primary font-bold leading-relaxed mb-10 max-w-none mx-auto text-center mt-6 whitespace-nowrap"
         >
           {t("hero.tagline")}
         </motion.p>
@@ -40,7 +40,7 @@ const HeroSection = () => {
           transition={{ duration: 0.7, delay: 0.5 }}
           className="text-center pb-20"
         >
-          <p className="font-body text-sm md:text-base text-foreground/70 italic mb-2 max-w-xl mx-auto leading-relaxed">
+          <p className="font-body text-sm md:text-base text-foreground/70 font-bold mb-2 max-w-xl mx-auto leading-relaxed">
             {t("hero.quote")}
           </p>
           <p className="font-body text-xs tracking-wider text-muted-foreground">

@@ -25,14 +25,8 @@ const Navbar = () => {
             <img
               src={logoImg}
               alt="Bhadram Yoga"
-              className="h-16 w-auto mb-1"
+              className="h-16 w-auto"
             />
-            <span className="font-display text-2xl tracking-[0.25em] text-foreground uppercase">
-              BHADRAM
-            </span>
-            <span className="font-display text-sm tracking-[0.45em] text-foreground uppercase font-light">
-              YOGA
-            </span>
           </a>
           {/* Language switcher */}
           <div className="flex-1 flex justify-end items-start gap-2 pt-1">

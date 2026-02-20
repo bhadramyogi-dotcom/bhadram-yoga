@@ -13,7 +13,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1 }}
-          className="font-body text-xs md:text-sm text-primary leading-relaxed mb-6 max-w-2xl mx-auto text-center mt-4"
+          className="font-body text-xs md:text-sm text-primary font-bold leading-relaxed mb-6 max-w-none mx-auto text-center mt-4 whitespace-nowrap"
         >
           {t("hero.tagline")}
         </motion.p>

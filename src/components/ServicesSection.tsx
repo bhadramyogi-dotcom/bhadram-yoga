@@ -8,65 +8,39 @@ const ServicesSection = () => {
   return (
     <section id="clases" className="py-20 bg-background border-t border-border">
       <div className="max-w-5xl mx-auto px-6">
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="font-body text-xs tracking-[0.25em] uppercase text-primary mb-8"
-        >
-          {t("classes.label")}
-        </motion.p>
-
-        <div className="grid md:grid-cols-2 gap-16 items-start">
-          {/* Text left */}
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          {/* Text */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <p className="font-body text-sm text-foreground leading-relaxed mb-4">
-              {t("classes.title_1")} {t("classes.title_2")}
-            </p>
-            <p className="font-body text-sm text-foreground/75 leading-relaxed mb-4">
+            <p className="font-body text-sm text-foreground/75 leading-relaxed mb-4 text-justify">
               {t("classes.p1")}
             </p>
-            <p className="font-body text-sm text-foreground/75 leading-relaxed mb-4">
+            <p className="font-body text-sm text-foreground/75 leading-relaxed mb-4 text-justify">
               {t("classes.p2")}
             </p>
-          </motion.div>
-
-          {/* Text right */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.15 }}
-          >
-            <p className="font-body text-sm text-foreground/75 leading-relaxed mb-4">
+            <p className="font-body text-sm text-foreground/75 leading-relaxed text-justify">
               {t("classes.p3")}
             </p>
-            <p className="font-body text-sm text-foreground/75 leading-relaxed">
-              {t("classes.p4")}
-            </p>
+          </motion.div>
+
+          {/* Image */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, delay: 0.15 }}
+          >
+            <img
+              src={servicesImage}
+              alt="Ofrenda floral de yoga"
+              className="w-full h-[400px] object-cover"
+            />
           </motion.div>
         </div>
-
-        {/* Image below */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7, delay: 0.2 }}
-          className="mt-14"
-        >
-          <img
-            src={servicesImage}
-            alt="Yoga class"
-            className="w-full h-64 md:h-96 object-cover"
-          />
-        </motion.div>
       </div>
     </section>
   );

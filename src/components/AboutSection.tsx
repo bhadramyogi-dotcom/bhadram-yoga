@@ -35,19 +35,19 @@ const AboutSection = () => {
             <h2 className="font-display text-3xl md:text-4xl uppercase tracking-wide font-normal text-primary mb-8">
               {t("about.label")}
             </h2>
-            <p className="font-body text-sm text-foreground/75 leading-relaxed mb-3">
+            <p className="font-body text-sm text-foreground/75 leading-relaxed text-justify mb-3">
               {t("about.p1")}
             </p>
-            <p className="font-body text-sm text-foreground/75 leading-relaxed mb-3">
+            <p className="font-body text-sm text-foreground/75 leading-relaxed text-justify mb-3">
               {t("about.p2")}
             </p>
-            <p className="font-body text-sm text-foreground/75 leading-relaxed mb-3">
+            <p className="font-body text-sm text-foreground/75 leading-relaxed text-justify mb-3">
               {t("about.p3")}
             </p>
-            <p className="font-body text-sm text-foreground/75 leading-relaxed mb-3">
+            <p className="font-body text-sm text-foreground/75 leading-relaxed text-justify mb-3">
               {t("about.p4")}
             </p>
-            <p className="font-body text-sm text-foreground/75 leading-relaxed">
+            <p className="font-body text-sm text-foreground/75 leading-relaxed text-justify">
               {t("about.p5")}
             </p>
           </motion.div>

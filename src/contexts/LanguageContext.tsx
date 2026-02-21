@@ -81,6 +81,14 @@ const translations: Record<string, Record<Language, string>> = {
     es: "Estoy en la lista de recomendados de la Asociación Suiza de Yoga SYV (www.swissyoga.ch) y registrada en QualiCert (www.qualicert.ch).",
     de: "Ich bin auf der Empfehlungsliste des Schweizer Yogaverbandes SYV (www.swissyoga.ch) und bei QualiCert registriert (www.qualicert.ch).",
   },
+  "about.cert_text_p1": {
+    es: "Estoy en la lista de recomendados de la Asociación Suiza de Yoga SYV (",
+    de: "Ich bin auf der Empfehlungsliste des Schweizer Yogaverbandes SYV (",
+  },
+  "about.cert_text_p2": {
+    es: ") y registrada en QualiCert (",
+    de: ") und bei QualiCert registriert (",
+  },
 
   // Pricing
   "pricing.label": { es: "Cursos & Precios", de: "Kursangebot" },

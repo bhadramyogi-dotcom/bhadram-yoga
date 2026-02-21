@@ -12,8 +12,8 @@ const ServicesSection = () => {
   return (
     <section id="clases" className="py-20 bg-background border-t border-border">
       <div className="max-w-5xl mx-auto px-6">
-        {/* Block 1: Image left + text right — heights matched */}
-        <div className="grid md:grid-cols-2 gap-10 items-start">
+        {/* Block 1: Image left + text right — equal 50/50 columns, matched height */}
+        <div className="grid md:grid-cols-2 min-h-[400px]">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -24,7 +24,7 @@ const ServicesSection = () => {
             <img
               src={servicesImage}
               alt="Ofrenda floral de yoga"
-              className="w-full object-cover"
+              className="w-full h-full object-cover"
             />
           </motion.div>
 
@@ -33,15 +33,15 @@ const ServicesSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.15 }}
-            className="flex flex-col justify-center"
+            className="flex flex-col justify-center px-8 py-10 md:px-12 md:py-14"
           >
             <p className="font-body text-sm text-foreground/85 leading-relaxed text-justify">
               {t("classes.title_1")} {t("classes.title_2")}
             </p>
-            <p className="font-body text-sm text-foreground/75 leading-relaxed text-justify">
+            <p className="font-body text-sm text-foreground/75 leading-loose text-justify mt-3">
               {t("classes.p1")}
             </p>
-            <p className="font-body text-sm text-foreground/75 leading-relaxed text-justify">
+            <p className="font-body text-sm text-foreground/75 leading-loose text-justify mt-3">
               {t("classes.p2")}
             </p>
           </motion.div>

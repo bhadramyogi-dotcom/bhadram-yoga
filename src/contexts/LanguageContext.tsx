@@ -12,8 +12,8 @@ const translations: Record<string, Record<Language, string>> = {
   // Navbar
   "nav.home": { es: "Inicio", de: "Startseite" },
   "nav.classes": { es: "Mis Clases", de: "Meine Yogastunden" },
+  "nav.online": { es: "Online", de: "Online" },
   "nav.about": { es: "Sobre Mí", de: "Über mich" },
-  "nav.pricing": { es: "Cursos & Precios", de: "Kursangebot" },
   "nav.contact": { es: "Contacto", de: "Kontakt" },
 
   // Hero

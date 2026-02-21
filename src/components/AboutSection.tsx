@@ -54,40 +54,6 @@ const AboutSection = () => {
           </motion.div>
         </div>
 
-        {/* Location & Cert row */}
-        <motion.div
-          initial={{ opacity: 0, y: 15 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          className="grid md:grid-cols-2 gap-10 mt-14 border-t border-border pt-10"
-        >
-          <div>
-            <p className="font-body text-xs font-semibold text-primary tracking-wider mb-2">
-              {t("about.location_label")}
-            </p>
-            <p className="font-body text-sm text-foreground/75 leading-relaxed whitespace-pre-line">
-              {t("about.location")}
-            </p>
-          </div>
-          <div>
-            <p className="font-body text-xs font-semibold text-primary tracking-wider mb-2">
-              {t("about.cert_label")}
-            </p>
-            <p className="font-body text-sm text-foreground/75 leading-relaxed">
-              {t("about.cert_text").split("www.swissyoga.ch").map((part, i, arr) =>
-                i < arr.length - 1 ? (
-                  <span key={i}>
-                    {part}
-                    <a href="https://www.swissyoga.ch" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
-                      www.swissyoga.ch
-                    </a>
-                  </span>
-                ) : part
-              )}
-            </p>
-          </div>
-        </motion.div>
       </div>
     </section>
   );

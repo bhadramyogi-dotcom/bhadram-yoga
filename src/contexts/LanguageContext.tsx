@@ -90,6 +90,14 @@ const translations: Record<string, Record<Language, string>> = {
   "pricing.abo": { es: "10 Clases Abo (4 Meses de validez)", de: "10er Abonnement (4 Monate gültig)" },
   "pricing.private": { es: "Clase Privada", de: "Privatstunde" },
 
+  // Online
+  "online.products_title": { es: "Productos digitales", de: "Digitale Produkte" },
+  "online.products_desc": {
+    es: "Guías y prácticas para acompañarte a volver al cuerpo con calma y constancia.",
+    de: "Anleitungen und Übungen, die dich dabei begleiten, mit Ruhe und Beständigkeit zu deinem Körper zurückzufinden.",
+  },
+  "online.products_cta": { es: "Ver productos", de: "Produkte ansehen" },
+
   // Contact
   "contact.label": { es: "Contacto", de: "Kontakt" },
   "contact.title": { es: "CONÉCTATE CONMIGO", de: "KONTAKT" },

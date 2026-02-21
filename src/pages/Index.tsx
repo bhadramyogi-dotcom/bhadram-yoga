@@ -1,8 +1,8 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import ServicesSection from "@/components/ServicesSection";
+import OnlineSection from "@/components/OnlineSection";
 import AboutSection from "@/components/AboutSection";
-
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import { LanguageProvider } from "@/contexts/LanguageContext";
@@ -15,8 +15,8 @@ const Index = () => {
         <Navbar />
         <HeroSection />
         <ServicesSection />
+        <OnlineSection />
         <AboutSection />
-        
         <ContactSection />
         <Footer />
       </div>

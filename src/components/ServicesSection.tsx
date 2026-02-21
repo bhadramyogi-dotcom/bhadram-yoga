@@ -13,7 +13,7 @@ const ServicesSection = () => {
     <section id="clases" className="py-20 bg-background border-t border-border">
       <div className="max-w-5xl mx-auto px-6">
         {/* Block 1: Image left + text right — heights matched */}
-        <div className="grid md:grid-cols-2 gap-12 items-stretch">
+        <div className="grid md:grid-cols-[2fr_3fr] gap-12 items-stretch">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}

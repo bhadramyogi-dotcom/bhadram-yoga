@@ -47,28 +47,14 @@ const ServicesSection = () => {
           </motion.div>
         </div>
 
-        {/* Block 2: Mis Clases — equal 50/50 columns, matched height */}
+        {/* Block 2: Mis Clases — text left, image right */}
         <div className="mt-20 grid md:grid-cols-2 gap-8 min-h-[400px]">
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.7 }}
-            className="overflow-hidden"
-          >
-            <img
-              src={classroomImage}
-              alt="Salón de yoga"
-              className="w-full h-full object-cover"
-            />
-          </motion.div>
-
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.15 }}
-            className="flex flex-col justify-center p-8"
+            className="flex flex-col justify-center p-8 order-2 md:order-1"
           >
             <p className="font-body text-xs tracking-[0.25em] uppercase text-primary mb-6">
               {t("classes.label")}
@@ -79,6 +65,20 @@ const ServicesSection = () => {
             <p className="font-body text-sm text-foreground/75 leading-loose text-justify mt-3">
               {t("classes.p4")}
             </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+            className="overflow-hidden order-1 md:order-2"
+          >
+            <img
+              src={classroomImage}
+              alt="Salón de yoga"
+              className="w-full h-full object-cover"
+            />
           </motion.div>
         </div>
 

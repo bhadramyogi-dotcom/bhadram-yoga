@@ -3,11 +3,11 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import ebookMockup from "@/assets/ebook-mockup.png";
 
 const OnlineSection = () => {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
 
   return (
     <section id="online" className="py-20 bg-background border-t border-border">
-      <div className="max-w-5xl mx-auto px-6">
+      <div className="max-w-3xl mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           {/* Block 1: Insight Timer */}
           <motion.div
@@ -22,7 +22,7 @@ const OnlineSection = () => {
             <iframe
               style={{ borderRadius: "16px" }}
               width="100%"
-              height="455px"
+              height="350px"
               title="Insight Timer Embed: Bhadram Yoga"
               frameBorder="0"
               allowFullScreen
@@ -48,8 +48,8 @@ const OnlineSection = () => {
                 alt="eBook Bhadram Yoga"
                 className="w-full max-w-xs object-cover"
               />
-              <p className="font-body text-sm text-foreground/75 leading-relaxed text-justify">
-                {t("online.products_desc")}
+              <p className="font-body text-sm text-foreground/75 leading-relaxed text-center">
+                {lang === "de" ? "Verfügbar auf Spanisch und Deutsch" : "Disponibles en español y alemán"}
               </p>
               <a
                 href="https://payhip.com/BhadramYoga"

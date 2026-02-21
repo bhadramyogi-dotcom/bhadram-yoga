@@ -82,37 +82,34 @@ const ServicesSection = () => {
           </motion.div>
         </div>
 
-        {/* Block 3: Investment + Location (2 cols), then Cert row below */}
+        {/* Block 3: Two-column — Pricing+Location left, Cert+Logos right */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="mt-20"
+          className="mt-20 grid md:grid-cols-2 gap-8"
         >
-          <div className="grid md:grid-cols-2 gap-10">
-            {/* Col 1: Tu inversión */}
-            <div>
-              <p className="font-body text-sm text-foreground font-semibold mb-4">
-                {t("pricing.title")}
-              </p>
-              {[
-                { key: "pricing.trial", price: "CHF 25.00" },
-                { key: "pricing.single", price: "CHF 30.00" },
-                { key: "pricing.private", price: "CHF 100.00 (60 min)" },
-              ].map((item, i) => (
-                <div
-                  key={i}
-                  className="flex items-baseline justify-between py-2 border-b border-border last:border-b-0"
-                >
-                  <p className="font-body text-sm text-foreground/80">{t(item.key)}</p>
-                  <p className="font-body text-sm text-foreground font-medium ml-4 whitespace-nowrap">{item.price}</p>
-                </div>
-              ))}
-            </div>
+          {/* Left column: Tu inversión + Lugar */}
+          <div className="p-6 flex flex-col justify-center">
+            <p className="font-body text-sm text-foreground font-semibold mb-4">
+              {t("pricing.title")}
+            </p>
+            {[
+              { key: "pricing.trial", price: "CHF 25.00" },
+              { key: "pricing.single", price: "CHF 30.00" },
+              { key: "pricing.private", price: "CHF 100.00 (60 min)" },
+            ].map((item, i) => (
+              <div
+                key={i}
+                className="flex items-baseline justify-between py-2 border-b border-border last:border-b-0"
+              >
+                <p className="font-body text-sm text-foreground/80">{t(item.key)}</p>
+                <p className="font-body text-sm text-foreground font-medium ml-4 whitespace-nowrap">{item.price}</p>
+              </div>
+            ))}
 
-            {/* Col 2: Lugar */}
-            <div>
+            <div className="mt-8">
               <p className="font-body text-xs font-semibold text-primary tracking-wider mb-2">
                 {t("about.location_label")}
               </p>
@@ -122,18 +119,21 @@ const ServicesSection = () => {
             </div>
           </div>
 
-          {/* Row below: Seguro médico + logos */}
-          <div className="mt-10 border-t border-border pt-8">
+          {/* Right column: Cert text + logos */}
+          <div className="p-6 flex flex-col justify-center">
             <p className="font-body text-xs font-semibold text-primary tracking-wider mb-3">
               {t("about.cert_label")}
             </p>
-            <p className="font-body text-sm text-foreground/75 leading-relaxed mb-4">
-              {t("about.cert_text")}
+            <p className="font-body text-sm text-foreground/75 leading-loose mb-6">
+              {t("about.cert_text_p1")}{" "}
+              <a href="https://www.swissyoga.ch" target="_blank" rel="noopener noreferrer" className="underline text-primary hover:text-primary/80">www.swissyoga.ch</a>
+              {t("about.cert_text_p2")}{" "}
+              <a href="https://www.qualicert.ch" target="_blank" rel="noopener noreferrer" className="underline text-primary hover:text-primary/80">www.qualicert.ch</a>
+              ).
             </p>
             <div className="flex items-center gap-6">
-              <img src={logoYogalehrer} alt="Schweizer Yogaverband - dipl. Yogalehrer/in SYV" className="h-16 w-16 object-contain" />
-              <img src={logoMitglied} alt="Schweizer Yogaverband - Mitglied" className="h-16 w-16 object-contain" />
-              <img src={logoQualicert} alt="QualiCert" className="h-16 w-16 object-contain" />
+              <img src={logoQualicert} alt="QualiCert" className="h-16 w-auto object-contain" />
+              <img src={logoMitglied} alt="Schweizer Yogaverband - Mitglied" className="h-16 w-auto object-contain" />
             </div>
           </div>
         </motion.div>

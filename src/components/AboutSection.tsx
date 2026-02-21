@@ -32,9 +32,9 @@ const AboutSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="flex flex-col justify-center px-8 py-10 md:px-12 md:py-14"
           >
-            <p className="font-body text-xs tracking-[0.25em] uppercase text-primary mb-6">
+            <h2 className="font-display text-3xl md:text-4xl uppercase tracking-wide font-normal text-primary mb-8">
               {t("about.label")}
-            </p>
+            </h2>
             <p className="font-body text-sm text-foreground/75 leading-relaxed mb-3">
               {t("about.p1")}
             </p>

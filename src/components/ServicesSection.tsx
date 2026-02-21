@@ -33,7 +33,7 @@ const ServicesSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.15 }}
-            className="flex flex-col justify-between"
+            className="flex flex-col"
           >
             <p className="font-body text-sm text-foreground/85 leading-relaxed text-justify">
               {t("classes.title_1")} {t("classes.title_2")}

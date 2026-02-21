@@ -10,8 +10,8 @@ const Navbar = () => {
   const navLinks = [
     { label: t("nav.home"), href: "#inicio" },
     { label: t("nav.classes"), href: "#clases" },
+    { label: t("nav.online"), href: "#online" },
     { label: t("nav.about"), href: "#sobre-mi" },
-    { label: t("nav.pricing"), href: "#precios" },
     { label: t("nav.contact"), href: "#contacto" },
   ];
 

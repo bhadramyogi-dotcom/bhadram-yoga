@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useLanguage } from "@/contexts/LanguageContext";
 import servicesImage from "@/assets/services-yoga.jpg";
-import classroomImage from "@/assets/yoga-classroom.webp";
+import classroomImage from "@/assets/yogaraum-luzern.jpg";
 import logoYogalehrer from "@/assets/logo-syv-yogalehrer.jpg";
 import logoMitglied from "@/assets/logo-syv-mitglied.jpg";
 import logoQualicert from "@/assets/logo-qualicert.png";
@@ -47,7 +47,7 @@ const ServicesSection = () => {
           </motion.div>
         </div>
 
-        {/* Block 2: Mis Clases — title top, then text left + image right */}
+        {/* Block 2: Mis Clases — equal 50/50 columns, matched height */}
         <div className="mt-20">
           <motion.p
             initial={{ opacity: 0 }}
@@ -59,22 +59,7 @@ const ServicesSection = () => {
             {t("classes.label")}
           </motion.p>
 
-          <div className="grid md:grid-cols-2 gap-12 items-stretch">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.15 }}
-              className="flex flex-col justify-between"
-            >
-              <p className="font-body text-sm text-foreground/75 leading-relaxed text-justify">
-                {t("classes.p3")}
-              </p>
-              <p className="font-body text-sm text-foreground/75 leading-relaxed text-justify">
-                {t("classes.p4")}
-              </p>
-            </motion.div>
-
+          <div className="grid md:grid-cols-2 min-h-[400px]">
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -87,6 +72,21 @@ const ServicesSection = () => {
                 alt="Salón de yoga"
                 className="w-full h-full object-cover"
               />
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.15 }}
+              className="flex flex-col justify-center px-8 py-10 md:px-12 md:py-14"
+            >
+              <p className="font-body text-sm text-foreground/75 leading-loose text-justify">
+                {t("classes.p3")}
+              </p>
+              <p className="font-body text-sm text-foreground/75 leading-loose text-justify mt-3">
+                {t("classes.p4")}
+              </p>
             </motion.div>
           </div>
         </div>

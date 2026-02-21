@@ -88,7 +88,7 @@ const ServicesSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="mt-20 grid md:grid-cols-2 gap-8"
+          className="mt-20 grid md:grid-cols-2 gap-8 min-h-[300px]"
         >
           {/* Left column: Tu inversión + Lugar */}
           <div className="p-6 flex flex-col justify-center">
@@ -102,7 +102,7 @@ const ServicesSection = () => {
             ].map((item, i) => (
               <div
                 key={i}
-                className="flex items-baseline justify-between py-2 border-b border-border last:border-b-0"
+                className="flex items-baseline justify-between py-2"
               >
                 <p className="font-body text-sm text-foreground/80">{t(item.key)}</p>
                 <p className="font-body text-sm text-foreground font-medium ml-4 whitespace-nowrap">{item.price}</p>

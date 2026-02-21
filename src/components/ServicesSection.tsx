@@ -13,7 +13,7 @@ const ServicesSection = () => {
     <section id="clases" className="py-20 bg-background border-t border-border">
       <div className="max-w-5xl mx-auto px-6">
         {/* Block 1: Image left + text right — heights matched */}
-        <div className="grid md:grid-cols-[1fr_2fr] gap-10 items-start">
+        <div className="grid md:grid-cols-2 gap-10 items-start">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -24,7 +24,7 @@ const ServicesSection = () => {
             <img
               src={servicesImage}
               alt="Ofrenda floral de yoga"
-              className="w-full h-full object-cover"
+              className="w-full object-cover"
             />
           </motion.div>
 
@@ -35,13 +35,13 @@ const ServicesSection = () => {
             transition={{ duration: 0.6, delay: 0.15 }}
             className="flex flex-col justify-center"
           >
-            <p className="font-body text-xs text-foreground/85 leading-relaxed text-justify">
+            <p className="font-body text-sm text-foreground/85 leading-relaxed text-justify">
               {t("classes.title_1")} {t("classes.title_2")}
             </p>
-            <p className="font-body text-xs text-foreground/75 leading-relaxed text-justify">
+            <p className="font-body text-sm text-foreground/75 leading-relaxed text-justify">
               {t("classes.p1")}
             </p>
-            <p className="font-body text-xs text-foreground/75 leading-relaxed text-justify">
+            <p className="font-body text-sm text-foreground/75 leading-relaxed text-justify">
               {t("classes.p2")}
             </p>
           </motion.div>

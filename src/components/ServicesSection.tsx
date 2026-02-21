@@ -9,14 +9,14 @@ const ServicesSection = () => {
   return (
     <section id="clases" className="py-20 bg-background border-t border-border">
       <div className="max-w-5xl mx-auto px-6">
-        {/* Block 1: Image left + text right */}
+        {/* Block 1: Image left + text right — heights matched */}
         <div className="grid md:grid-cols-2 gap-12 items-stretch">
-          {/* Image */}
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
+            className="overflow-hidden"
           >
             <img
               src={servicesImage}
@@ -25,7 +25,6 @@ const ServicesSection = () => {
             />
           </motion.div>
 
-          {/* Text */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -45,7 +44,7 @@ const ServicesSection = () => {
           </motion.div>
         </div>
 
-        {/* Block 2: Mis Clases title + classroom image + text */}
+        {/* Block 2: Mis Clases — title top, then text left + image right */}
         <div className="mt-20">
           <motion.p
             initial={{ opacity: 0 }}
@@ -58,21 +57,7 @@ const ServicesSection = () => {
           </motion.p>
 
           <div className="grid md:grid-cols-2 gap-12 items-stretch">
-            {/* Classroom image */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7 }}
-            >
-              <img
-                src={classroomImage}
-                alt="Salón de yoga"
-                className="w-full h-full object-cover"
-              />
-            </motion.div>
-
-            {/* Text */}
+            {/* Text left */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -87,10 +72,25 @@ const ServicesSection = () => {
                 {t("classes.p4")}
               </p>
             </motion.div>
+
+            {/* Classroom image right */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7 }}
+              className="overflow-hidden"
+            >
+              <img
+                src={classroomImage}
+                alt="Salón de yoga"
+                className="w-full h-full object-cover"
+              />
+            </motion.div>
           </div>
         </div>
 
-        {/* Block 3: Pricing (moved from PricingSection) */}
+        {/* Block 3: Pricing / Location / Cert — 3 compact columns */}
         <div className="mt-20">
           <motion.p
             initial={{ opacity: 0 }}
@@ -101,7 +101,7 @@ const ServicesSection = () => {
           >
             {t("pricing.label")}
           </motion.p>
-          <motion.h2
+          <motion.p
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -109,39 +109,34 @@ const ServicesSection = () => {
             className="font-body text-sm text-foreground font-semibold mb-8"
           >
             {t("pricing.title")}
-          </motion.h2>
+          </motion.p>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="max-w-2xl"
+            className="grid md:grid-cols-3 gap-10"
           >
-            {[
-              { key: "pricing.trial", price: "CHF 25.00" },
-              { key: "pricing.abo", price: "CHF 270.00" },
-              { key: "pricing.single", price: "CHF 30.00" },
-              { key: "pricing.private", price: "CHF 100.00 (60 min)" },
-            ].map((item, i) => (
-              <div
-                key={i}
-                className="flex items-center justify-between py-4 border-b border-border last:border-b-0"
-              >
-                <p className="font-body text-sm text-foreground/80">{t(item.key)}</p>
-                <p className="font-body text-sm text-foreground font-medium">{item.price}</p>
-              </div>
-            ))}
-          </motion.div>
+            {/* Col 1: Prices */}
+            <div>
+              {[
+                { key: "pricing.trial", price: "CHF 25.00" },
+                { key: "pricing.abo", price: "CHF 270.00" },
+                { key: "pricing.single", price: "CHF 30.00" },
+                { key: "pricing.private", price: "CHF 100.00 (60 min)" },
+              ].map((item, i) => (
+                <div
+                  key={i}
+                  className="flex items-baseline justify-between py-2 border-b border-border last:border-b-0"
+                >
+                  <p className="font-body text-sm text-foreground/80">{t(item.key)}</p>
+                  <p className="font-body text-sm text-foreground font-medium ml-4 whitespace-nowrap">{item.price}</p>
+                </div>
+              ))}
+            </div>
 
-          {/* Location & Cert */}
-          <motion.div
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="grid md:grid-cols-2 gap-10 mt-10 border-t border-border pt-10"
-          >
+            {/* Col 2: Location */}
             <div>
               <p className="font-body text-xs font-semibold text-primary tracking-wider mb-2">
                 {t("about.location_label")}
@@ -150,6 +145,8 @@ const ServicesSection = () => {
                 {t("about.location")}
               </p>
             </div>
+
+            {/* Col 3: Cert */}
             <div>
               <p className="font-body text-xs font-semibold text-primary tracking-wider mb-2">
                 {t("about.cert_label")}

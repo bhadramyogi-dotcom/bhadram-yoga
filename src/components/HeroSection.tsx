@@ -40,7 +40,7 @@ const HeroSection = () => {
           transition={{ duration: 0.7, delay: 0.5 }}
           className="text-center pb-20"
         >
-          <p className="font-body text-sm md:text-base text-foreground/70 font-bold mb-2 max-w-xl mx-auto leading-relaxed">
+          <p className="font-body text-base md:text-lg text-foreground/70 font-bold mb-2 max-w-4xl mx-auto leading-relaxed whitespace-nowrap">
             {t("hero.quote")}
           </p>
           <p className="font-body text-xs tracking-wider text-muted-foreground">

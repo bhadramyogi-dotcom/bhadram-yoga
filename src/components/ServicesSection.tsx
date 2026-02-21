@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useLanguage } from "@/contexts/LanguageContext";
 import servicesImage from "@/assets/services-yoga.jpg";
-import classroomImage from "@/assets/yogaraum-luzern.jpg";
+import classroomImage from "@/assets/yogaraum-luzern.webp";
 import logoYogalehrer from "@/assets/logo-syv-yogalehrer.jpg";
 import logoMitglied from "@/assets/logo-syv-mitglied.jpg";
 import logoQualicert from "@/assets/logo-qualicert.png";
@@ -48,47 +48,38 @@ const ServicesSection = () => {
         </div>
 
         {/* Block 2: Mis Clases — equal 50/50 columns, matched height */}
-        <div className="mt-20">
-          <motion.p
+        <div className="mt-20 grid md:grid-cols-2 gap-8 min-h-[400px]">
+          <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="font-body text-xs tracking-[0.25em] uppercase text-primary mb-8"
+            transition={{ duration: 0.7 }}
+            className="overflow-hidden"
           >
-            {t("classes.label")}
-          </motion.p>
+            <img
+              src={classroomImage}
+              alt="Salón de yoga"
+              className="w-full h-full object-cover"
+            />
+          </motion.div>
 
-          <div className="grid md:grid-cols-2 min-h-[400px]">
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7 }}
-              className="overflow-hidden"
-            >
-              <img
-                src={classroomImage}
-                alt="Salón de yoga"
-                className="w-full h-full object-cover"
-              />
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.15 }}
-              className="flex flex-col justify-center px-8 py-10 md:px-12 md:py-14"
-            >
-              <p className="font-body text-sm text-foreground/75 leading-loose text-justify">
-                {t("classes.p3")}
-              </p>
-              <p className="font-body text-sm text-foreground/75 leading-loose text-justify mt-3">
-                {t("classes.p4")}
-              </p>
-            </motion.div>
-          </div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.15 }}
+            className="flex flex-col justify-center p-8"
+          >
+            <p className="font-body text-xs tracking-[0.25em] uppercase text-primary mb-6">
+              {t("classes.label")}
+            </p>
+            <p className="font-body text-sm text-foreground/75 leading-loose text-justify">
+              {t("classes.p3")}
+            </p>
+            <p className="font-body text-sm text-foreground/75 leading-loose text-justify mt-3">
+              {t("classes.p4")}
+            </p>
+          </motion.div>
         </div>
 
         {/* Block 3: Investment + Location (2 cols), then Cert row below */}

@@ -25,7 +25,7 @@ const Navbar = () => {
             <img
               src={logoImg}
               alt="Bhadram Yoga"
-              className="h-24 w-auto"
+              className="h-32 w-auto"
             />
           </a>
           {/* Language switcher */}

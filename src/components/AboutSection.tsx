@@ -8,18 +8,19 @@ const AboutSection = () => {
   return (
     <section id="sobre-mi" className="py-20 bg-background border-t border-border">
       <div className="max-w-5xl mx-auto px-6">
-        <div className="grid md:grid-cols-2 gap-16 items-start">
+        <div className="grid md:grid-cols-2 min-h-[400px]">
           {/* Image */}
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
+            className="overflow-hidden"
           >
             <img
               src={ivanaImage}
               alt="Ivana Gasser"
-              className="w-full h-[480px] object-cover object-top"
+              className="w-full h-full object-cover object-top"
             />
           </motion.div>
 
@@ -29,13 +30,8 @@ const AboutSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
+            className="flex flex-col justify-center px-8 py-10 md:px-12 md:py-14"
           >
-            <p className="font-body text-xs tracking-[0.25em] uppercase text-primary mb-6">
-              {t("about.label")}
-            </p>
-            <h2 className="font-display text-4xl md:text-5xl text-foreground mb-8 uppercase tracking-wide font-normal">
-              {t("about.label")}
-            </h2>
             <p className="font-body text-sm text-foreground/75 leading-relaxed mb-3">
               {t("about.p1")}
             </p>

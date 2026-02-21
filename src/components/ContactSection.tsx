@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Mail, Facebook, Instagram } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import logoYogalehrer from "@/assets/logo-syv-yogalehrer.jpg";
 
 const ContactSection = () => {
   const { t } = useLanguage();
@@ -15,7 +16,7 @@ const ContactSection = () => {
           transition={{ duration: 0.7 }}
           className="text-center"
         >
-          <h2 className="font-display text-4xl md:text-5xl text-primary uppercase tracking-widest mb-8">
+          <h2 className="font-display text-3xl md:text-4xl text-primary uppercase tracking-wide font-normal mb-8">
             {t("contact.title")}
           </h2>
 
@@ -23,9 +24,10 @@ const ContactSection = () => {
           <p className="font-body text-xs text-muted-foreground mb-1 tracking-wider">
             {t("contact.role")}
           </p>
-          <p className="font-body text-xs text-muted-foreground mb-8 tracking-wider">
+          <p className="font-body text-xs text-muted-foreground mb-4 tracking-wider">
             {t("contact.member")}
           </p>
+          <img src={logoYogalehrer} alt="Schweizer Yogaverband - Yogalehrerin" className="h-16 w-auto object-contain mx-auto mb-8" />
           <p className="font-body text-sm text-foreground/70 mb-8">
             {t("contact.question")}
           </p>

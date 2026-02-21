@@ -8,9 +8,9 @@ const OnlineSection = () => {
   return (
     <section id="online" className="py-20 bg-background border-t border-border">
       <div className="max-w-3xl mx-auto px-6">
-        <p className="font-body text-xs tracking-[0.25em] uppercase text-primary mb-12">
+        <h2 className="font-display text-3xl md:text-4xl uppercase tracking-wide font-normal text-primary mb-12">
           {lang === "de" ? "Online-Präsenz" : "Presencia online"}
-        </p>
+        </h2>
         <div className="grid md:grid-cols-2 gap-12 items-start">
           {/* Block 1: Insight Timer */}
           <motion.div

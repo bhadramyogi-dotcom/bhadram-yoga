@@ -56,9 +56,9 @@ const ServicesSection = () => {
             transition={{ duration: 0.6, delay: 0.15 }}
             className="flex flex-col justify-center p-8 order-2 md:order-1"
           >
-            <p className="font-body text-xs tracking-[0.25em] uppercase text-primary mb-6">
+            <h2 className="font-display text-3xl md:text-4xl uppercase tracking-wide font-normal text-primary mb-6">
               {t("classes.label")}
-            </p>
+            </h2>
             <p className="font-body text-sm text-foreground/75 leading-loose text-justify">
               {t("classes.p3")}
             </p>

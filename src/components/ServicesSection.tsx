@@ -121,9 +121,6 @@ const ServicesSection = () => {
 
           {/* Right column: Cert text + logos */}
           <div className="p-6 flex flex-col justify-center">
-            <p className="font-body text-xs font-semibold text-primary tracking-wider mb-3">
-              {t("about.cert_label")}
-            </p>
             <p className="font-body text-sm text-foreground/75 leading-loose mb-6">
               {t("about.cert_text_p1")}{" "}
               <a href="https://www.swissyoga.ch" target="_blank" rel="noopener noreferrer" className="underline text-primary hover:text-primary/80">www.swissyoga.ch</a>

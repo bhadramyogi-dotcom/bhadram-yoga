@@ -8,6 +8,9 @@ const OnlineSection = () => {
   return (
     <section id="online" className="py-20 bg-background border-t border-border">
       <div className="max-w-3xl mx-auto px-6">
+        <p className="font-body text-xs tracking-[0.25em] uppercase text-primary mb-12">
+          {lang === "de" ? "Online-Präsenz" : "Presencia online"}
+        </p>
         <div className="grid md:grid-cols-2 gap-12 items-start">
           {/* Block 1: Insight Timer */}
           <motion.div
@@ -16,9 +19,6 @@ const OnlineSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
           >
-            <p className="font-body text-xs tracking-[0.25em] uppercase text-primary mb-8">
-              Insight Timer
-            </p>
             <iframe
               style={{ borderRadius: "16px" }}
               width="100%"
@@ -39,9 +39,6 @@ const OnlineSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
           >
-            <p className="font-body text-xs tracking-[0.25em] uppercase text-primary mb-8">
-              Payhip
-            </p>
             <div className="flex flex-col items-center gap-6">
               <img
                 src={ebookMockup}

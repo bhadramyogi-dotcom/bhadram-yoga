@@ -59,24 +59,44 @@ const translations: Record<string, Record<Language, string>> = {
   // About
   "about.label": { es: "Sobre Mí", de: "Über mich" },
   "about.p1": {
-    es: "Mi nombre es Ivana, vengo de la Patagonia Argentina. Soy una persona agradecida y afortunada. Vivo en el bellísimo Engelberg. Como amante de la naturaleza me gusta pasar mucho tiempo al aire libre. Soy una Trail runner y trekker en mi corazón.",
-    de: "Ich heisse Ivana und komme aus Patagonien in Argentinien. Ich bin eine dankbare und glückliche Person und lebe seit vielen Jahren im schönen Engelberg. Als Naturliebhaberin verbringe ich gerne viel Zeit draussen in der Natur. Trailrunning und Trekking mag ich besonders.",
+    es: "Mi nombre es Ivana, vengo de la Patagonia Argentina.",
+    de: "Ich heisse Ivana und komme aus Patagonien in Argentinien.",
   },
   "about.p2": {
-    es: "De profesión Farmacéutica, trabajé en el sector de la salud durante muchos años. En la actualidad, mi vocación y dedicación plena se centra en la enseñanza del yoga.",
-    de: "Ich habe Pharmazie studiert und war während vielen Jahren im Gesundheitssektor tätig. Derzeit konzentriere ich mich voll und ganz auf das Unterrichten von Yoga.",
+    es: "Soy una persona agradecida y afortunada.",
+    de: "Ich bin eine dankbare und glückliche Person.",
   },
   "about.p3": {
-    es: "Mi primer contacto con el yoga fue hace más de veinte años en un Workshop que Indra Devi dió en Buenos Aires. Con ella aprendí distintas técnicas de respiración que todavía uso hoy en día.",
-    de: "An einem Workshop der Yogalehrerin Indra Devi in Buenos Aires kam ich vor über zwanzig Jahren das erste Mal mit Yoga in Kontakt. Dort lernte ich Atemtechniken, die ich heute noch anwende.",
+    es: "Vivo en el bellísimo Engelberg.",
+    de: "Ich lebe seit vielen Jahren im schönen Engelberg.",
   },
   "about.p4": {
-    es: "En el 2013 participé por primera vez en el Festival Internacional de Yoga en Rishikesh, India. Allí conocí a muchos maestros y yogis que me inspiraron a practicar distintos tipos de yoga. Un año más tarde visité diferentes Workshops de Gurmukh Kaur Kalsa. Con ella aprendí a movilizar mis energías, a percibir y observar conscientemente mis emociones.",
-    de: "2013 nahm ich das erste Mal am Internationalen Yogafestival in Rishikesh, Indien teil. Dort traf ich für mich wegweisende Lehrer und Yogis, die mich dazu inspiriert haben, verschiedene Yoga-Arten zu praktizieren. Ein Jahr später besuchte ich verschiedene Workshops von Gurmukh Kaur Kalsa. Dabei lernte ich, meine Energien zu mobilisieren und meine Emotionen bewusst wahrzunehmen und zu beobachten.",
+    es: "Como amante de la naturaleza me gusta pasar mucho tiempo al aire libre. Soy una trail runner y trekker en mi corazón.",
+    de: "Als Naturliebhaberin verbringe ich gerne viel Zeit draussen in der Natur. Trailrunning und Trekking mag ich besonders.",
   },
   "about.p5": {
-    es: "En la primavera del 2015 volví a Rishikesh y completé una formación (YTT 200) en Hatha Yoga con Surinder Singh (Swasti Yoga). La conexión en el ahora entre el cuerpo y la mente sincronizados con la respiración me ha fascinado durante muchos años. Para profundizar en mi conocimiento y práctica, completé la formación de cuatro años para convertirme en profesora diplomada de Yoga en la Universidad de Yoga de Villeret, Suiza. El camino de aprender y mejorar nunca termina.",
-    de: "Im Frühjahr 2015 kehrte ich nach Rishikesh zurück und absolvierte bei Surinder Singh (Swasti-Yoga) eine Ausbildung (YTT 200) in Hatha Yoga. Die Verbindung von Körper und Geist und die Synchronisation mit dem Atem faszinieren mich seit vielen Jahren. Zur Vertiefung meines Wissens und meiner Praxis habe ich an der Yoga University Villeret in der Schweiz die vierjährige Ausbildung zur dipl. Yogalehrerin absolviert. Der Weg des Lernens und sich Verbesserns ist nie zu Ende.",
+    es: "De profesión farmacéutica, trabajé en el sector de la salud durante muchos años. En la actualidad, mi vocación y dedicación plena se centra en la enseñanza del yoga.",
+    de: "Ich habe Pharmazie studiert und war während vielen Jahren im Gesundheitssektor tätig. Derzeit konzentriere ich mich voll und ganz auf das Unterrichten von Yoga.",
+  },
+  "about.p6": {
+    es: "Mi primer contacto con el yoga fue hace más de veinte años en un workshop que Indra Devi dio en Buenos Aires. Con ella aprendí distintas técnicas de respiración que todavía uso hoy en día.",
+    de: "An einem Workshop der Yogalehrerin Indra Devi in Buenos Aires kam ich vor über zwanzig Jahren das erste Mal mit Yoga in Kontakt. Dort lernte ich Atemtechniken, die ich heute noch anwende.",
+  },
+  "about.p7": {
+    es: "En 2013 participé por primera vez en el Festival Internacional de Yoga en Rishikesh, India. Allí conocí a muchos maestros y yoguis que me inspiraron a practicar distintos tipos de yoga. Un año más tarde asistí a diferentes workshops de Gurmukh Kaur Khalsa. Con ella aprendí a movilizar mis energías y a percibir y observar conscientemente mis emociones.",
+    de: "2013 nahm ich das erste Mal am Internationalen Yogafestival in Rishikesh, Indien teil. Dort traf ich für mich wegweisende Lehrer und Yogis, die mich dazu inspiriert haben, verschiedene Yoga-Arten zu praktizieren. Ein Jahr später besuchte ich verschiedene Workshops von Gurmukh Kaur Kalsa. Dabei lernte ich, meine Energien zu mobilisieren und meine Emotionen bewusst wahrzunehmen und zu beobachten.",
+  },
+  "about.p8": {
+    es: "En la primavera de 2015 volví a Rishikesh y completé una formación YTT 200 en Hatha Yoga con Surinder Singh de Swasti Yoga.",
+    de: "Im Frühjahr 2015 kehrte ich nach Rishikesh zurück und absolvierte bei Surinder Singh (Swasti-Yoga) eine Ausbildung (YTT 200) in Hatha Yoga.",
+  },
+  "about.p9": {
+    es: "La conexión en el ahora entre el cuerpo y la mente, sincronizados con la respiración, me ha fascinado durante muchos años. Para profundizar en mi conocimiento y práctica, completé la formación de cuatro años para convertirme en profesora diplomada de yoga en la Universidad de Yoga de Villeret, Suiza.",
+    de: "Die Verbindung von Körper und Geist und die Synchronisation mit dem Atem faszinieren mich seit vielen Jahren. Zur Vertiefung meines Wissens und meiner Praxis habe ich an der Yoga University Villeret in der Schweiz die vierjährige Ausbildung zur dipl. Yogalehrerin absolviert.",
+  },
+  "about.p10": {
+    es: "El camino de aprender y mejorar nunca termina.",
+    de: "Der Weg des Lernens und sich Verbesserns ist nie zu Ende.",
   },
   "about.location_label": { es: "Lugar:", de: "Wo:" },
   "about.location": { es: "Yogaraum Luzern\nDufourstrasse 20a\n6003 Luzern", de: "Yogaraum Luzern\nDufourstrasse 20a\n6003 Luzern" },

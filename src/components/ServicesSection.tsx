@@ -48,7 +48,7 @@ const ServicesSection = () => {
         </div>
 
         {/* Block 2: Mis Clases — text left, image right */}
-        <div className="mt-20 grid md:grid-cols-2 gap-8 min-h-[400px]">
+        <div className="mt-20 grid md:grid-cols-2 gap-8 items-start">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -75,7 +75,7 @@ const ServicesSection = () => {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="overflow-hidden order-1 md:order-2">
+            className="overflow-hidden order-1 md:order-2 self-stretch max-h-fit">
 
             <img
               src={classroomImage}

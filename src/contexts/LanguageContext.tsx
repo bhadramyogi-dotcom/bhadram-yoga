@@ -23,7 +23,7 @@ const translations: Record<string, Record<Language, string>> = {
   },
   "hero.quote": {
     es: "«Conoce tu propia luz, esto te permitirá reconocer y ver toda la luz alrededor.»",
-    de: "«Wenn du dein eigenes Licht kennst, kannst du das Licht um dich herum erkennen und sehen.»",
+    de: "«Erkenne Dein eigenes Licht. Dies wird Dir helfen, alle anderen Lichter zu verstehen und zu sehen.»",
   },
   "hero.quote_author": { es: "Swami Rama", de: "Swami Rama" },
   "hero.cta": { es: "Descubre las clases", de: "Kurse entdecken" },
@@ -33,7 +33,7 @@ const translations: Record<string, Record<Language, string>> = {
   "classes.title_1": { es: "Cuando reconoces tu propia luz,", de: "Durch das Erkennen des eigenen Lichts" },
   "classes.title_2": {
     es: "te aceptas a ti mismo y aceptas lo que es y sucede a tu alrededor. Esto te ayuda a vivir tu vida sin juzgarte ni juzgar a los demás.",
-    de: "wirst du dich selbst besser kennenlernen und dein Umfeld so akzeptieren, wie es ist.",
+    de: "wirst du dich selbst besser kennenlernen und dein Umfeld so akzeptieren, wie es ist. Das hilft dir, weder dich selbst noch andere zu verurteilen.",
   },
   "classes.p1": {
     es: "Con la práctica de yoga constante y humilde fluyes a través del movimiento y la respiración. Abres tu mente a la transformación que se va dando en ti para conectarte con tu luz interior.",
@@ -49,11 +49,11 @@ const translations: Record<string, Record<Language, string>> = {
   },
   "classes.p3b": {
     es: "Quiero mostrarte la seguridad que dá el reconocer tu propia luz, la alegría que se siente al encontrarse con la luz de otras personas y la paz que experimentas al aceptar que cada ser brilla a su manera.",
-    de: "",
+    de: "Folgende drei Dinge möchte ich dir vermitteln:\n\n- Die Sicherheit, die sich aus dem Erkennen des eigenen Lichts ergibt.\n- Die Freude, die du empfindest, wenn du das Licht in anderen Menschen erkennst.\n- Den Frieden, den du fühlst, wenn du akzeptierst, dass jedes Wesen auf seine eigene Art und Weise leuchtet.",
   },
   "classes.p4": {
     es: "Mis clases, que pueden ser en español o alemán, están centradas en ayudarte a conectar con tu cuerpo y respiración. Están influenciadas por Hatha Yoga clásico. Me gusta utilizar soportes, realizo ajustes y correcciones cuando son necesarias para ayudarte a construir las posturas corporales (asanas) con seguridad. Mis clases son para todos los que quieran probar, aprender y mejorar su práctica de yoga. Para mí lo más importante es que encuentres tu ritmo y que al seguirlo puedas fluir con calma.",
-    de: "Meine Yoga-Kurse finden auf Spanisch oder Deutsch statt und basieren auf dem klassischen Hatha Yoga, das dir hilft, den Fluss von Körper und Atem zu spüren. Beim Erlernen der Körperstellungen (Asanas) gebe ich dir ein persönliches Feedback, damit du deine Haltungen verbessern kannst. Meine Kurse stehen all denjenigen offen, die Yoga ausprobieren, lernen oder verbessern möchten. Ganz ohne Zeitdruck lernst du die Körperstellungen und deren Ausführungen.",
+    de: "Meine Yoga-Kurse finden auf Spanisch oder Deutsch statt und basieren auf dem klassischen Hatha Yoga, das dir hilft, den Fluss von Körper und Atem zu spüren. Beim Erlernen der Körperstellungen Asanas gebe ich dir ein persönliches Feedback, damit du deine Haltungen verbessern kannst.\n\nMeine Kurse stehen all jenen offen, die Yoga ausprobieren, lernen oder verbessern möchten. Ganz ohne Zeitdruck lernst du die Körperstellungen und deren Ausführungen.\n\nWichtig ist, dass du Freude und Zufriedenheit empfindest.",
   },
 
   // About
@@ -64,11 +64,11 @@ const translations: Record<string, Record<Language, string>> = {
   },
   "about.p2": {
     es: "Soy una persona agradecida y afortunada.",
-    de: "Ich bin eine dankbare und glückliche Person.",
+    de: "Ich bin eine dankbare und glückliche Person und lebe seit vielen Jahren im schönen Engelberg.",
   },
   "about.p3": {
     es: "Vivo en el bellísimo Engelberg.",
-    de: "Ich lebe seit vielen Jahren im schönen Engelberg.",
+    de: "",
   },
   "about.p4": {
     es: "Como amante de la naturaleza me gusta pasar mucho tiempo al aire libre. Soy una trail runner y trekker en mi corazón.",
@@ -84,11 +84,11 @@ const translations: Record<string, Record<Language, string>> = {
   },
   "about.p7": {
     es: "En 2013 participé por primera vez en el Festival Internacional de Yoga en Rishikesh, India. Allí conocí a muchos maestros y yoguis que me inspiraron a practicar distintos tipos de yoga. Un año más tarde asistí a diferentes workshops de Gurmukh Kaur Khalsa. Con ella aprendí a movilizar mis energías y a percibir y observar conscientemente mis emociones.",
-    de: "2013 nahm ich das erste Mal am Internationalen Yogafestival in Rishikesh, Indien teil. Dort traf ich für mich wegweisende Lehrer und Yogis, die mich dazu inspiriert haben, verschiedene Yoga-Arten zu praktizieren. Ein Jahr später besuchte ich verschiedene Workshops von Gurmukh Kaur Kalsa. Dabei lernte ich, meine Energien zu mobilisieren und meine Emotionen bewusst wahrzunehmen und zu beobachten.",
+    de: "2013 nahm ich das erste Mal am Internationalen Yogafestival in Rishikesh, Indien teil. Dort traf ich für mich wegweisende Lehrer und Yogis, die mich dazu inspirierten, verschiedene Yoga-Arten zu praktizieren. Ein Jahr später besuchte ich verschiedene Workshops von Gurmukh Kaur Khalsa. Dabei lernte ich, meine Energien zu mobilisieren und meine Emotionen bewusst wahrzunehmen und zu beobachten.",
   },
   "about.p8": {
     es: "En la primavera de 2015 volví a Rishikesh y completé una formación YTT 200 en Hatha Yoga con Surinder Singh de Swasti Yoga.",
-    de: "Im Frühjahr 2015 kehrte ich nach Rishikesh zurück und absolvierte bei Surinder Singh (Swasti-Yoga) eine Ausbildung (YTT 200) in Hatha Yoga.",
+    de: "Im Frühjahr 2015 kehrte ich nach Rishikesh zurück und absolvierte bei Surinder Singh (Swasti Yoga) eine Ausbildung (YTT 200) in Hatha Yoga.",
   },
   "about.p9": {
     es: "La conexión en el ahora entre el cuerpo y la mente, sincronizados con la respiración, me ha fascinado durante muchos años. Para profundizar en mi conocimiento y práctica, completé la formación de cuatro años para convertirme en profesora diplomada de yoga en la Universidad de Yoga de Villeret, Suiza.",

@@ -6,7 +6,7 @@ const HeroSection = () => {
   const { t } = useLanguage();
 
   return (
-    <section id="inicio" className="pt-56 pb-0 bg-background">
+    <section id="inicio" className="pt-64 pb-0 bg-background">
       <div className="max-w-5xl mx-auto px-6">
         {/* Tagline in gold */}
         <motion.p

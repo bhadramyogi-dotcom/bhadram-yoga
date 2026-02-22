@@ -89,7 +89,7 @@ const ServicesSection = () => {
 
           {/* Left column: Tu inversión + Lugar */}
           <div className="p-6 flex flex-col justify-center">
-            <p className="font-body text-sm text-primary font-semibold mb-4">
+            <p className="font-body text-sm text-primary font-semibold mb-2">
               {t("pricing.title")}
             </p>
             {[
@@ -97,13 +97,13 @@ const ServicesSection = () => {
               { key: "pricing.single", price: "CHF 30.00" },
               { key: "pricing.private", price: "CHF 100.00 (60 min)" },
             ].map((item, i) => (
-              <div key={i} className="flex items-baseline justify-between py-2">
+              <div key={i} className="flex items-baseline justify-between py-1">
                 <p className="font-body text-sm text-foreground/75">{t(item.key)}</p>
                 <p className="font-body text-sm text-foreground font-medium ml-4 whitespace-nowrap">{item.price}</p>
               </div>
             ))}
 
-            <div className="mt-8">
+            <div className="mt-4">
               <p className="font-body text-sm text-foreground/75 leading-relaxed whitespace-pre-line">
                 {t("about.location")}
               </p>
@@ -116,8 +116,8 @@ const ServicesSection = () => {
               {t("about.cert_text_p1")}<a href="https://www.swissyoga.ch" target="_blank" rel="noopener noreferrer" className="underline text-primary hover:text-primary/80">www.swissyoga.ch</a>{t("about.cert_text_p2")}<a href="https://www.qualicert.ch" target="_blank" rel="noopener noreferrer" className="underline text-primary hover:text-primary/80">www.qualicert.ch</a>{t("about.cert_text_p3")}
             </p>
             <div className="flex items-center gap-6">
-              <img src={logoQualicert} alt="QualiCert" className="h-16 w-auto object-contain" />
-              <img src={logoMitglied} alt="Schweizer Yogaverband - Mitglied" className="h-16 w-auto object-contain" />
+              <img src={logoQualicert} alt="QualiCert" className="h-20 w-auto object-contain" />
+              <img src={logoMitglied} alt="Schweizer Yogaverband - Mitglied" className="h-20 w-auto object-contain" />
             </div>
           </div>
         </motion.div>

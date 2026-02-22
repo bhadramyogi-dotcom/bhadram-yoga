@@ -35,13 +35,13 @@ const ServicesSection = () => {
             transition={{ duration: 0.6, delay: 0.15 }}
             className="flex flex-col justify-center px-8 py-10 md:px-12 md:py-14">
 
-            <p className="font-body text-sm text-foreground/85 leading-relaxed text-justify">
+            <p className="font-body text-sm text-foreground/75 leading-relaxed text-justify">
               {t("classes.title_1")} {t("classes.title_2")}
             </p>
-            <p className="font-body text-sm text-foreground/75 leading-loose text-justify mt-3">
+            <p className="font-body text-sm text-foreground/75 leading-relaxed text-justify mt-3">
               {t("classes.p1")}
             </p>
-            <p className="font-body text-sm text-foreground/75 leading-loose text-justify mt-3">
+            <p className="font-body text-sm text-foreground/75 leading-relaxed text-justify mt-3">
               {t("classes.p2")}
             </p>
           </motion.div>
@@ -59,13 +59,13 @@ const ServicesSection = () => {
             <h2 className="font-display text-2xl uppercase tracking-wide font-normal text-primary mb-6 text-left">
               {t("classes.label")}
             </h2>
-            <p className="font-body text-sm text-foreground/75 leading-loose text-justify">
+            <p className="font-body text-sm text-foreground/75 leading-relaxed text-justify">
               {t("classes.p3")}
             </p>
-            <p className="font-body text-sm text-foreground/75 leading-loose text-justify mt-3">
+            <p className="font-body text-sm text-foreground/75 leading-relaxed text-justify mt-3">
               {t("classes.p3b")}
             </p>
-            <p className="text-sm text-foreground/75 leading-loose mt-3 font-serif text-left">
+            <p className="font-body text-sm text-foreground/75 leading-relaxed text-justify mt-3">
               {t("classes.p4")}
             </p>
           </motion.div>
@@ -121,7 +121,7 @@ const ServicesSection = () => {
 
           {/* Right column: Cert text + logos */}
           <div className="p-6 flex flex-col justify-center">
-            <p className="font-body text-sm text-foreground/75 leading-loose mb-6">
+            <p className="font-body text-sm text-foreground/75 leading-relaxed mb-6">
               {t("about.cert_text_p1")}<a href="https://www.swissyoga.ch" target="_blank" rel="noopener noreferrer" className="underline text-primary hover:text-primary/80">www.swissyoga.ch</a>{t("about.cert_text_p2")}<a href="https://www.qualicert.ch" target="_blank" rel="noopener noreferrer" className="underline text-primary hover:text-primary/80">www.qualicert.ch</a>{t("about.cert_text_p3")}
             </p>
             <div className="flex items-center gap-6">

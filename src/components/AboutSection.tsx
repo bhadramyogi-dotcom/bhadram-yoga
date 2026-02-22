@@ -8,19 +8,19 @@ const AboutSection = () => {
   return (
     <section id="sobre-mi" className="py-20 bg-background border-t border-border">
       <div className="max-w-5xl mx-auto px-6">
-        <div className="grid md:grid-cols-2 min-h-[400px]">
+        <div className="grid md:grid-cols-2 items-start">
           {/* Image */}
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="overflow-hidden">
+            className="overflow-hidden sticky top-20">
 
             <img
               src={ivanaImage}
               alt="Ivana Gasser"
-              className="w-full h-full object-cover object-top" />
+              className="w-full h-auto object-contain" />
 
           </motion.div>
 

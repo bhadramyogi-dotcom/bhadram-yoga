@@ -6,14 +6,14 @@ const HeroSection = () => {
   const { t } = useLanguage();
 
   return (
-    <section id="inicio" className="pt-52 pb-0 bg-background">
+    <section id="inicio" className="pt-56 pb-0 bg-background">
       <div className="max-w-5xl mx-auto px-6">
         {/* Tagline in gold */}
         <motion.p
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1 }}
-          className="font-body text-xs md:text-sm text-primary font-bold leading-relaxed mb-10 max-w-none mx-auto text-center mt-6 whitespace-nowrap"
+          className="font-body text-xs md:text-sm text-primary font-bold leading-relaxed mb-12 max-w-none mx-auto text-center mt-2 whitespace-nowrap"
         >
           {t("hero.tagline")}
         </motion.p>

@@ -13,13 +13,13 @@ const ServicesSection = () => {
     <section id="clases" className="py-20 bg-background border-t border-border">
       <div className="max-w-5xl mx-auto px-6">
         {/* Block 1: Image left + text right — equal 50/50 columns, matched height */}
-        <div className="grid md:grid-cols-2 min-h-[400px]">
+        <div className="grid md:grid-cols-2 items-center">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="overflow-hidden max-h-[360px]">
+            className="overflow-hidden">
 
             <img
               src={servicesImage}
@@ -48,7 +48,7 @@ const ServicesSection = () => {
         </div>
 
         {/* Block 2: Mis Clases — text left, image right */}
-        <div className="mt-20 grid md:grid-cols-2 gap-8 items-start">
+        <div className="mt-20 grid md:grid-cols-2 gap-8 items-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

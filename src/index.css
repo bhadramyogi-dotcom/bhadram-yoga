@@ -69,3 +69,16 @@
     text-wrap: balance;
   }
 }
+
+@layer components {
+  .section-title {
+    @apply font-display uppercase tracking-wide font-normal text-primary;
+    font-size: 20px;
+  }
+
+  @media (min-width: 768px) {
+    .section-title {
+      font-size: 22px;
+    }
+  }
+}

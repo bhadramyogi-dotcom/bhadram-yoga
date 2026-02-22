@@ -32,7 +32,7 @@ const AboutSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="flex flex-col justify-between px-8 py-4 md:px-12 md:py-6">
 
-            <h2 className="font-display text-2xl uppercase tracking-wide font-normal text-primary mb-4">
+            <h2 className="section-title mb-4">
               {t("about.label")}
             </h2>
             {["about.p1","about.p2","about.p3","about.p4","about.p5","about.p6","about.p7","about.p8","about.p9","about.p10"].map((key, i, arr) => (

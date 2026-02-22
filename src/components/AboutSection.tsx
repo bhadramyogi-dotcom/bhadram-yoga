@@ -15,13 +15,13 @@ const AboutSection = () => {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="overflow-hidden"
-          >
+            className="overflow-hidden">
+
             <img
               src={ivanaImage}
               alt="Ivana Gasser"
-              className="w-full h-full object-cover object-top"
-            />
+              className="w-full h-full object-cover object-top" />
+
           </motion.div>
 
           {/* Text */}
@@ -30,12 +30,12 @@ const AboutSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="flex flex-col justify-center px-8 py-10 md:px-12 md:py-14"
-          >
+            className="flex flex-col justify-center px-8 py-10 md:px-12 md:py-14">
+
             <h2 className="font-display text-3xl md:text-4xl uppercase tracking-wide font-normal text-primary mb-8">
               {t("about.label")}
             </h2>
-            <p className="font-body text-sm text-foreground/75 leading-relaxed text-justify mb-3">
+            <p className="font-body text-sm text-foreground/75 leading-relaxed mb-3 text-left">
               {t("about.p1")}
             </p>
             <p className="font-body text-sm text-foreground/75 leading-relaxed text-justify mb-3">
@@ -54,8 +54,8 @@ const AboutSection = () => {
         </div>
 
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default AboutSection;

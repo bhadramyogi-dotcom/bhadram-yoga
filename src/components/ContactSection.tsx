@@ -16,7 +16,7 @@ const ContactSection = () => {
           transition={{ duration: 0.7 }}
           className="text-center"
         >
-          <h2 className="font-display text-2xl text-primary uppercase tracking-wide font-normal mb-8">
+          <h2 className="section-title mb-8">
             {t("contact.title")}
           </h2>
 

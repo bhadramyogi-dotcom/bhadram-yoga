@@ -8,7 +8,7 @@ const OnlineSection = () => {
   return (
     <section id="online" className="py-20 bg-background border-t border-border">
       <div className="max-w-3xl mx-auto px-6">
-        <h2 className="font-display text-2xl uppercase tracking-wide font-normal text-primary mb-12">
+        <h2 className="section-title mb-12">
           {lang === "de" ? "Online-Präsenz" : "Presencia online"}
         </h2>
         <div className="grid md:grid-cols-2 gap-12 items-start">

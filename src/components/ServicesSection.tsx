@@ -113,9 +113,9 @@ const ServicesSection = () => {
             )}
 
             <div className="mt-8">
-              <p className="font-body text-xs font-semibold text-primary tracking-wider mb-2">
-                {t("about.location_label")}
-              </p>
+              
+
+
               <p className="font-body text-sm text-foreground/75 leading-relaxed whitespace-pre-line">
                 {t("about.location")}
               </p>

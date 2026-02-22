@@ -113,9 +113,6 @@ const ServicesSection = () => {
             )}
 
             <div className="mt-8">
-              
-
-
               <p className="font-body text-sm text-foreground/75 leading-relaxed whitespace-pre-line">
                 {t("about.location")}
               </p>
@@ -125,11 +122,7 @@ const ServicesSection = () => {
           {/* Right column: Cert text + logos */}
           <div className="p-6 flex flex-col justify-center">
             <p className="font-body text-sm text-foreground/75 leading-loose mb-6">
-              {t("about.cert_text_p1")}
-              {" "}<a href="https://www.swissyoga.ch" target="_blank" rel="noopener noreferrer" className="underline text-primary hover:text-primary/80">www.swissyoga.ch</a>
-              {t("about.cert_text_p2")}
-              {" "}<a href="https://www.qualicert.ch" target="_blank" rel="noopener noreferrer" className="underline text-primary hover:text-primary/80">www.qualicert.ch</a>
-              ).
+              {t("about.cert_text_p1")}<a href="https://www.swissyoga.ch" target="_blank" rel="noopener noreferrer" className="underline text-primary hover:text-primary/80">www.swissyoga.ch</a>{t("about.cert_text_p2")}<a href="https://www.qualicert.ch" target="_blank" rel="noopener noreferrer" className="underline text-primary hover:text-primary/80">www.qualicert.ch</a>{t("about.cert_text_p3")}
             </p>
             <div className="flex items-center gap-6">
               <img src={logoQualicert} alt="QualiCert" className="h-16 w-auto object-contain" />

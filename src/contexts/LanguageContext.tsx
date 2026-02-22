@@ -113,6 +113,10 @@ const translations: Record<string, Record<Language, string>> = {
     es: ") y registrada en QualiCert (",
     de: ") und bei QualiCert registriert (",
   },
+  "about.cert_text_p3": {
+    es: ").",
+    de: ").",
+  },
 
   // Pricing
   "pricing.label": { es: "Cursos & Precios", de: "Kursangebot" },

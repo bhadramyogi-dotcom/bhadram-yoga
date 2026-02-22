@@ -75,12 +75,12 @@ const ServicesSection = () => {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="overflow-hidden order-1 md:order-2">
+            className="overflow-hidden order-1 md:order-2 max-h-[340px]">
 
             <img
               src={classroomImage}
               alt="Salón de yoga"
-              className="w-full h-auto object-contain" />
+              className="w-full h-full object-cover" />
 
           </motion.div>
         </div>

@@ -19,13 +19,13 @@ const ServicesSection = () => {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="overflow-hidden"
-          >
+            className="overflow-hidden">
+
             <img
               src={servicesImage}
               alt="Ofrenda floral de yoga"
-              className="w-full h-full object-cover"
-            />
+              className="w-full h-full object-cover" />
+
           </motion.div>
 
           <motion.div
@@ -33,8 +33,8 @@ const ServicesSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.15 }}
-            className="flex flex-col justify-center px-8 py-10 md:px-12 md:py-14"
-          >
+            className="flex flex-col justify-center px-8 py-10 md:px-12 md:py-14">
+
             <p className="font-body text-sm text-foreground/85 leading-relaxed text-justify">
               {t("classes.title_1")} {t("classes.title_2")}
             </p>
@@ -54,8 +54,8 @@ const ServicesSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.15 }}
-            className="flex flex-col justify-center p-8 order-2 md:order-1"
-          >
+            className="flex flex-col justify-center p-8 order-2 md:order-1">
+
             <h2 className="font-display text-3xl md:text-4xl uppercase tracking-wide font-normal text-primary mb-6">
               {t("classes.label")}
             </h2>
@@ -65,7 +65,7 @@ const ServicesSection = () => {
             <p className="font-body text-sm text-foreground/75 leading-loose text-justify mt-3">
               {t("classes.p3b")}
             </p>
-            <p className="font-body text-sm text-foreground/75 leading-loose text-justify mt-3">
+            <p className="text-sm text-foreground/75 leading-loose mt-3 text-justify font-serif">
               {t("classes.p4")}
             </p>
           </motion.div>
@@ -75,13 +75,13 @@ const ServicesSection = () => {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="overflow-hidden order-1 md:order-2"
-          >
+            className="overflow-hidden order-1 md:order-2">
+
             <img
               src={classroomImage}
               alt="Salón de yoga"
-              className="w-full h-full object-cover"
-            />
+              className="w-full h-full object-cover" />
+
           </motion.div>
         </div>
 
@@ -91,26 +91,26 @@ const ServicesSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="mt-20 grid md:grid-cols-2 gap-8 min-h-[300px]"
-        >
+          className="mt-20 grid md:grid-cols-2 gap-8 min-h-[300px]">
+
           {/* Left column: Tu inversión + Lugar */}
           <div className="p-6 flex flex-col justify-center">
             <p className="font-body text-sm text-foreground font-semibold mb-4">
               {t("pricing.title")}
             </p>
             {[
-              { key: "pricing.trial", price: "CHF 25.00" },
-              { key: "pricing.single", price: "CHF 30.00" },
-              { key: "pricing.private", price: "CHF 100.00 (60 min)" },
-            ].map((item, i) => (
-              <div
-                key={i}
-                className="flex items-baseline justify-between py-2"
-              >
+            { key: "pricing.trial", price: "CHF 25.00" },
+            { key: "pricing.single", price: "CHF 30.00" },
+            { key: "pricing.private", price: "CHF 100.00 (60 min)" }].
+            map((item, i) =>
+            <div
+              key={i}
+              className="flex items-baseline justify-between py-2">
+
                 <p className="font-body text-sm text-foreground/80">{t(item.key)}</p>
                 <p className="font-body text-sm text-foreground font-medium ml-4 whitespace-nowrap">{item.price}</p>
               </div>
-            ))}
+            )}
 
             <div className="mt-8">
               <p className="font-body text-xs font-semibold text-primary tracking-wider mb-2">
@@ -138,8 +138,8 @@ const ServicesSection = () => {
           </div>
         </motion.div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default ServicesSection;

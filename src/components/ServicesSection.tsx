@@ -63,6 +63,9 @@ const ServicesSection = () => {
               {t("classes.p3")}
             </p>
             <p className="font-body text-sm text-foreground/75 leading-loose text-justify mt-3">
+              {t("classes.p3b")}
+            </p>
+            <p className="font-body text-sm text-foreground/75 leading-loose text-justify mt-3">
               {t("classes.p4")}
             </p>
           </motion.div>

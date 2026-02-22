@@ -29,7 +29,7 @@ const Navbar = () => {
             />
           </a>
           {/* Language switcher */}
-          <div className="flex-1 flex justify-end items-start gap-2 pt-1">
+          <div className="flex-1 flex justify-end items-start gap-2 pt-1 pr-10 md:pr-0">
             <button
               onClick={() => setLang("es")}
               className={`font-body text-xs tracking-wider transition-colors ${lang === "es" ? "text-foreground font-semibold" : "text-muted-foreground hover:text-foreground"}`}

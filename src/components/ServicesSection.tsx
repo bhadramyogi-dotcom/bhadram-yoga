@@ -12,20 +12,18 @@ const ServicesSection = () => {
   return (
     <section id="clases" className="py-20 bg-background border-t border-border">
       <div className="max-w-5xl mx-auto px-6">
-        {/* Block 1: Image left + text right — equal 50/50 columns, matched height */}
-        <div className="grid md:grid-cols-2 items-center">
+        {/* Block 1: Image left + text right */}
+        <div className="grid md:grid-cols-2 items-stretch">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
             className="overflow-hidden">
-
             <img
               src={servicesImage}
               alt="Ofrenda floral de yoga"
               className="w-full h-full object-cover" />
-
           </motion.div>
 
           <motion.div
@@ -33,8 +31,7 @@ const ServicesSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.15 }}
-            className="flex flex-col justify-center px-8 py-10 md:px-12 md:py-14">
-
+            className="flex flex-col justify-center px-8 py-8 md:px-12 md:py-10">
             <p className="font-body text-sm text-foreground/75 leading-relaxed text-justify">
               {t("classes.title_1")} {t("classes.title_2")}
             </p>
@@ -48,15 +45,14 @@ const ServicesSection = () => {
         </div>
 
         {/* Block 2: Mis Clases — text left, image right */}
-        <div className="mt-20 grid md:grid-cols-2 gap-8 items-center">
+        <div className="mt-20 grid md:grid-cols-2 items-stretch">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.15 }}
-            className="flex flex-col justify-center p-8 order-2 md:order-1">
-
-            <h2 className="font-display text-2xl uppercase tracking-wide font-normal text-primary mb-6 text-left">
+            className="flex flex-col justify-center px-8 py-8 md:px-12 md:py-10 order-2 md:order-1">
+            <h2 className="section-title mb-6">
               {t("classes.label")}
             </h2>
             <p className="font-body text-sm text-foreground/75 leading-relaxed text-justify">
@@ -75,13 +71,11 @@ const ServicesSection = () => {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="overflow-hidden order-1 md:order-2 max-h-[340px]">
-
+            className="overflow-hidden order-1 md:order-2">
             <img
               src={classroomImage}
               alt="Salón de yoga"
               className="w-full h-full object-cover" />
-
           </motion.div>
         </div>
 
@@ -99,18 +93,15 @@ const ServicesSection = () => {
               {t("pricing.title")}
             </p>
             {[
-            { key: "pricing.trial", price: "CHF 25.00" },
-            { key: "pricing.single", price: "CHF 30.00" },
-            { key: "pricing.private", price: "CHF 100.00 (60 min)" }].
-            map((item, i) =>
-            <div
-              key={i}
-              className="flex items-baseline justify-between py-2">
-
-                <p className="font-body text-sm text-foreground/80">{t(item.key)}</p>
+              { key: "pricing.trial", price: "CHF 25.00" },
+              { key: "pricing.single", price: "CHF 30.00" },
+              { key: "pricing.private", price: "CHF 100.00 (60 min)" },
+            ].map((item, i) => (
+              <div key={i} className="flex items-baseline justify-between py-2">
+                <p className="font-body text-sm text-foreground/75">{t(item.key)}</p>
                 <p className="font-body text-sm text-foreground font-medium ml-4 whitespace-nowrap">{item.price}</p>
               </div>
-            )}
+            ))}
 
             <div className="mt-8">
               <p className="font-body text-sm text-foreground/75 leading-relaxed whitespace-pre-line">
@@ -131,8 +122,8 @@ const ServicesSection = () => {
           </div>
         </motion.div>
       </div>
-    </section>);
-
+    </section>
+  );
 };
 
 export default ServicesSection;

@@ -8,11 +8,11 @@ const Navbar = () => {
   const { lang, setLang, t } = useLanguage();
 
   const navLinks = [
-    { label: t("nav.home"), href: "#inicio" },
-    { label: t("nav.classes"), href: "#clases" },
-    { label: t("nav.online"), href: "#online" },
-    { label: t("nav.about"), href: "#sobre-mi" },
-    { label: t("nav.contact"), href: "#contacto" },
+    { label: t("nav.home"), href: "/#inicio" },
+    { label: t("nav.classes"), href: "/#clases" },
+    { label: t("nav.online"), href: "/#online" },
+    { label: t("nav.about"), href: "/#sobre-mi" },
+    { label: t("nav.contact"), href: "/#contacto" },
   ];
 
   return (
@@ -21,7 +21,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="flex w-full items-start justify-between mb-4">
           <div className="flex-1" />
-          <a href="#inicio" className="flex-1 flex flex-col items-center">
+          <a href="/#inicio" className="flex-1 flex flex-col items-center">
             <img
               src={logoImg}
               alt="Bhadram Yoga"

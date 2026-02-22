@@ -44,8 +44,12 @@ const translations: Record<string, Record<Language, string>> = {
     de: "Du wirst ein harmonisches Leben voller Freude führen.",
   },
   "classes.p3": {
-    es: "Quiero compartir lo que voy aprendiendo. Quiero mostrarte la seguridad que dá el reconocer tu propia luz, la alegría que se siente al encontrarse con la luz de otras personas y la paz que experimentas al aceptar que cada ser brilla a su manera.",
+    es: "Quiero compartir lo que voy aprendiendo.",
     de: "Es erfüllt mich mit Freude, mein Yoga-Wissen sowie meine Erfahrungen weiterzugeben.",
+  },
+  "classes.p3b": {
+    es: "Quiero mostrarte la seguridad que dá el reconocer tu propia luz, la alegría que se siente al encontrarse con la luz de otras personas y la paz que experimentas al aceptar que cada ser brilla a su manera.",
+    de: "",
   },
   "classes.p4": {
     es: "Mis clases, que pueden ser en español o alemán, están centradas en ayudarte a conectar con tu cuerpo y respiración. Están influenciadas por Hatha Yoga clásico. Me gusta utilizar soportes, realizo ajustes y correcciones cuando son necesarias para ayudarte a construir las posturas corporales (asanas) con seguridad. Mis clases son para todos los que quieran probar, aprender y mejorar su práctica de yoga. Para mí lo más importante es que encuentres tu ritmo y que al seguirlo puedas fluir con calma.",

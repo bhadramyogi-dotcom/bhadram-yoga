@@ -19,7 +19,7 @@ const ServicesSection = () => {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="overflow-hidden">
+            className="overflow-hidden max-h-[360px]">
 
             <img
               src={servicesImage}

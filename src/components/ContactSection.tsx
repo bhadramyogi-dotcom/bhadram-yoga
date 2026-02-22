@@ -28,7 +28,7 @@ const ContactSection = () => {
             {t("contact.member")}
           </p>
           <img src={logoYogalehrer} alt="Schweizer Yogaverband - Yogalehrerin" className="h-16 w-auto object-contain mx-auto mb-8" />
-          <p className="font-body text-sm text-foreground/70 mb-8">
+          <p className="font-body text-sm text-foreground/75 mb-8">
             {t("contact.question")}
           </p>
 

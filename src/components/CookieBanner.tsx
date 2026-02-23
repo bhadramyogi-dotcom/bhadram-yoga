@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const CookieBanner = () => {
   const [visible, setVisible] = useState(false);
+  const { t } = useLanguage();
 
   useEffect(() => {
     const accepted = localStorage.getItem("cookies_accepted");
@@ -22,16 +24,16 @@ const CookieBanner = () => {
     <div className="fixed bottom-0 left-0 right-0 z-50 bg-foreground/95 text-background px-6 py-4">
       <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
         <p className="font-body text-xs leading-relaxed text-center sm:text-left">
-          Diese Webseite verwendet nur technisch notwendige Cookies.{" "}
+          {t("cookie.text")}{" "}
           <Link to="/datenschutz" className="underline hover:text-primary transition-colors">
-            Mehr erfahren
+            {t("cookie.link")}
           </Link>
         </p>
         <button
           onClick={handleAccept}
           className="font-body text-xs tracking-wider uppercase px-6 py-2 bg-primary text-primary-foreground hover:bg-primary/90 transition-colors whitespace-nowrap"
         >
-          Verstanden
+          {t("cookie.accept")}
         </button>
       </div>
     </div>

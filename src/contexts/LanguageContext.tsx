@@ -148,6 +148,14 @@ const translations: Record<string, Record<Language, string>> = {
   // Footer
   "footer.rights": { es: "© Copyright by Ivana Gasser 2020", de: "© Copyright by Ivana Gasser 2020" },
   "footer.impressum": { es: "Impressum", de: "Impressum" },
+
+  // Cookie banner
+  "cookie.text": {
+    es: "Este sitio web utiliza solo cookies técnicamente necesarias.",
+    de: "Diese Webseite verwendet nur technisch notwendige Cookies.",
+  },
+  "cookie.link": { es: "Más información", de: "Mehr erfahren" },
+  "cookie.accept": { es: "Entendido", de: "Verstanden" },
 };
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);

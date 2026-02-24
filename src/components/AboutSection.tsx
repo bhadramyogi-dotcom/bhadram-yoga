@@ -8,7 +8,7 @@ const AboutSection = () => {
   return (
     <section id="sobre-mi" className="py-20 bg-background border-t border-border">
       <div className="max-w-5xl mx-auto px-6">
-        <div className="grid md:grid-cols-2 items-stretch gap-0">
+        <div className="grid md:grid-cols-2 items-stretch gap-0 md:max-h-[600px]">
           {/* Image */}
           <motion.div
             initial={{ opacity: 0 }}
@@ -28,7 +28,7 @@ const AboutSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="flex flex-col justify-center px-8 py-8 md:px-12 md:py-10">
+            className="flex flex-col justify-center px-8 py-8 md:px-12 md:py-10 md:overflow-y-auto">
             <h2 className="section-title mb-4">
               {t("about.label")}
             </h2>

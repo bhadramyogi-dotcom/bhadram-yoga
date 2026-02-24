@@ -32,13 +32,13 @@ const ServicesSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.15 }}
             className="flex flex-col justify-center px-8 py-8 md:px-12 md:py-10">
-            <p className="font-body text-sm text-foreground/75 leading-relaxed text-justify">
+            <p className="font-body text-sm text-foreground/75 leading-relaxed text-left md:text-justify">
               {t("classes.title_1")} {t("classes.title_2")}
             </p>
-            <p className="font-body text-sm text-foreground/75 leading-relaxed text-justify mt-3">
+            <p className="font-body text-sm text-foreground/75 leading-relaxed text-left md:text-justify mt-3">
               {t("classes.p1")}
             </p>
-            <p className="font-body text-sm text-foreground/75 leading-relaxed text-justify mt-3">
+            <p className="font-body text-sm text-foreground/75 leading-relaxed text-left md:text-justify mt-3">
               {t("classes.p2")}
             </p>
           </motion.div>
@@ -55,13 +55,13 @@ const ServicesSection = () => {
             <h2 className="section-title mb-6">
               {t("classes.label")}
             </h2>
-            <p className="font-body text-sm text-foreground/75 leading-relaxed text-justify">
+            <p className="font-body text-sm text-foreground/75 leading-relaxed text-left md:text-justify">
               {t("classes.p3")}
             </p>
-            <p className="font-body text-sm text-foreground/75 leading-relaxed text-justify mt-3 whitespace-pre-line">
+            <p className="font-body text-sm text-foreground/75 leading-relaxed text-left md:text-justify mt-3 whitespace-pre-line">
               {t("classes.p3b")}
             </p>
-            <p className="font-body text-sm text-foreground/75 leading-relaxed text-justify mt-3 whitespace-pre-line">
+            <p className="font-body text-sm text-foreground/75 leading-relaxed text-left md:text-justify mt-3 whitespace-pre-line">
               {t("classes.p4")}
             </p>
           </motion.div>

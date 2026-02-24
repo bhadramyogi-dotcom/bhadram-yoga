@@ -33,7 +33,7 @@ const AboutSection = () => {
               {t("about.label")}
             </h2>
             {["about.p1","about.p2","about.p3","about.p4","about.p5","about.p6","about.p7","about.p8","about.p9","about.p10"].map((key, i, arr) => (
-              <p key={key} className={`font-body text-sm text-foreground/75 leading-relaxed text-justify ${i < arr.length - 1 ? "mb-1.5" : ""}`}>
+              <p key={key} className={`font-body text-sm text-foreground/75 leading-relaxed text-left md:text-justify ${i < arr.length - 1 ? "mb-1.5" : ""}`}>
                 {t(key)}
               </p>
             ))}

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, Facebook, Instagram } from "lucide-react";
+import { Mail, Instagram } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import logoYogalehrer from "@/assets/logo-syv-yogalehrer.jpg";
 

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, Facebook, Instagram } from "lucide-react";
+import { Mail, Instagram } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import logoYogalehrer from "@/assets/logo-syv-yogalehrer.jpg";
 
@@ -40,16 +40,7 @@ const ContactSection = () => {
           </a>
 
           {/* Social */}
-          <div className="flex items-center justify-center gap-5 mt-10">
-            <a
-              href="https://www.facebook.com/bhadram.yoga.37/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors"
-              aria-label="Facebook"
-            >
-              <Facebook size={20} />
-            </a>
+          <div className="flex items-center justify-center gap-6 mt-10">
             <a
               href="https://www.instagram.com/bhadram.yoga/"
               target="_blank"
